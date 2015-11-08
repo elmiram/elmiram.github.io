@@ -1,40 +1,40 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
-#cssmenu {
+.cssmenu {
   background: #f96e5b;
   width: 100%;
     z-index: 1000;
 }
-#cssmenu ul {
+.cssmenu ul {
   list-style: none;
   margin: 0;
   padding: 0;
   line-height: 1;
-  display: block;
+  /*display: block;*/
   zoom: 1;
 }
-#cssmenu ul:after {
+.cssmenu ul:after {
   content: " ";
-  display: block;
+  /*display: block;*/
   font-size: 0;
   height: 0;
   clear: both;
   visibility: hidden;
 }
-#cssmenu ul li {
+.cssmenu ul li {
   display: inline-block;
   padding: 0;
   margin: 0;
 }
-#cssmenu.align-right ul li {
+.cssmenu.align-right ul li {
   float: right;
 }
-#cssmenu.align-center ul {
+.cssmenu.align-center ul {
   text-align: center;
 }
-#cssmenu ul li a {
+.cssmenu ul li a {
   color: #ffffff;
   text-decoration: none;
-  display: block;
+  /*display: block;*/
   padding: 15px 25px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
@@ -47,15 +47,15 @@
   -o-transition: color .25s;
   transition: color .25s;
 }
-#cssmenu ul li a:hover {
+.cssmenu ul li a:hover {
   color: #333333;
 }
-#cssmenu ul li a:hover:before {
+.cssmenu ul li a:hover:before {
   width: 100%;
 }
-#cssmenu ul li a:after {
+.cssmenu ul li a:after {
   content: "";
-  display: block;
+  /*display: block;*/
   position: absolute;
   right: -3px;
   top: 19px;
@@ -64,9 +64,9 @@
   background: #ffffff;
   opacity: .5;
 }
-#cssmenu ul li a:before {
+.cssmenu ul li a:before {
   content: "";
-  display: block;
+  /*display: block;*/
   position: absolute;
   left: 0;
   bottom: 0;
@@ -79,43 +79,46 @@
   -o-transition: width .25s;
   transition: width .25s;
 }
-#cssmenu ul li.last > a:after,
-#cssmenu ul li:last-child > a:after {
+.cssmenu ul li.last > a:after,
+.cssmenu ul li:last-child > a:after {
   display: none;
 }
-#cssmenu ul li.active a {
+.cssmenu ul li.active a {
   color: #333333;
 }
-#cssmenu ul li.active a:before {
+.cssmenu ul li.active a:before {
   width: 100%;
 }
-#cssmenu.align-right li.last > a:after,
-#cssmenu.align-right li:last-child > a:after {
-  display: block;
+.cssmenu.align-right li.last > a:after,
+.cssmenu.align-right li:last-child > a:after {
+  /*display: block;*/
 }
-#cssmenu.align-right li:first-child a:after {
+.cssmenu.align-right li:first-child a:after {
   display: none;
 }
+
+
 @media screen and (max-width: 768px) {
-  #cssmenu .open ul li {
+
+  .cssmenu .in ul li {
     float: none;
     display: block;
   }
-  #cssmenu .open ul li a {
+  .cssmenu .in ul li a {
     width: 100%;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border-bottom: 1px solid #fb998c;
   }
-  #cssmenu .open ul li.last > a,
-  #cssmenu .open ul li:last-child > a {
+  .cssmenu .in ul li.last > a,
+  .cssmenu .in ul li:last-child > a {
     border: 0;
   }
-  #cssmenu .open ul li a:after {
+  .cssmenu .in ul li a:after {
     display: none;
   }
-  #cssmenu .open ul li a:before {
+  .cssmenu .in ul li a:before {
     display: none;
   }
 }
