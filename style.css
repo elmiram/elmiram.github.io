@@ -192,10 +192,11 @@ footer hr {
   width: 50%;
 }
 
-.gallery a img {
+.gallery img {
   -webkit-transform: translateZ(0); /* Fix chrome pixel shift */
   transition: opacity .2s ease;
   opacity: 1;
+    padding: 10px 0 10px 0;
 }
 
 .gallery a img:hover {
@@ -298,7 +299,7 @@ footer hr {
   /*font-size: 1.1em;*/
 }
 
-.spotlight a {
+.spotlight button {
   background-color: transparent;
   border: 3px solid #e4382c;
   padding: 7px 35px;
@@ -307,6 +308,11 @@ footer hr {
   font-size: 1.1em;
   opacity: .8;
   margin-bottom: 10px;
+}
+
+.spotlight a {
+  background-color: transparent;
+  color: #e4382c;
 }
 
 .spotlight a:hover {
