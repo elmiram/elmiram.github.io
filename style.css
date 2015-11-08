@@ -90,7 +90,7 @@ section ul li, section ol li {
   font-size: 1em;
   margin-left: -10px;
   line-height: 1.8;
-    text-align: left;
+    text-align: left !important;
 }
 
 footer {
