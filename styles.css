@@ -100,6 +100,7 @@
 
 @media screen and (max-width: 768px) {
 
+
   .cssmenu .in ul li {
     float: none;
     display: none;
@@ -108,23 +109,24 @@
     .cssmenu .collapse ul {
     float: none;
     display: block;
-        background: #f96e5b;
+    background: #f96e5b;
+        width: 110%;
   }
-  .cssmenu  ul li a {
+  .cssmenu  .collapse ul li a {
     width: 100%;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border-bottom: 1px solid #fb998c;
   }
-  .cssmenu  ul li.last > a,
-  .cssmenu  ul li:last-child > a {
+  .cssmenu   ul li.last > a,
+  .cssmenu   ul li:last-child > a {
     border: 0;
   }
-  .cssmenu  ul li a:after {
+  .cssmenu   ul li a:after {
     display: none;
   }
-  .cssmenu  ul li a:before {
+  .cssmenu   ul li a:before {
     display: none;
   }
 }
