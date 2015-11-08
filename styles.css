@@ -97,25 +97,25 @@
   display: none;
 }
 @media screen and (max-width: 768px) {
-  #cssmenu ul li {
+  #cssmenu .open ul li {
     float: none;
     display: block;
   }
-  #cssmenu ul li a {
+  #cssmenu .open ul li a {
     width: 100%;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border-bottom: 1px solid #fb998c;
   }
-  #cssmenu ul li.last > a,
-  #cssmenu ul li:last-child > a {
+  #cssmenu .open ul li.last > a,
+  #cssmenu .open ul li:last-child > a {
     border: 0;
   }
-  #cssmenu ul li a:after {
+  #cssmenu .open ul li a:after {
     display: none;
   }
-  #cssmenu ul li a:before {
+  #cssmenu .open ul li a:before {
     display: none;
   }
 }
