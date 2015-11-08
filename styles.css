@@ -102,7 +102,7 @@
 
   .cssmenu .in ul li {
     float: none;
-    display: block;
+    display: none;
   }
   .cssmenu .in ul li a {
     width: 100%;
