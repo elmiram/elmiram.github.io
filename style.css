@@ -276,7 +276,7 @@ footer hr {
 /* Spotlight */
 .spotlight {
   background-color: #f3e2d8;
-  /*padding: 3em 1em;*/
+  padding: 1em 1em;
   /*margin-top: 3em;*/
   /*margin-bottom: 3em;*/
   text-align: center;
@@ -299,7 +299,7 @@ footer hr {
   /*font-size: 1.1em;*/
 }
 
-.spotlight button {
+.spotlight .button {
   background-color: transparent;
   border: 3px solid #e4382c;
   padding: 7px 35px;
