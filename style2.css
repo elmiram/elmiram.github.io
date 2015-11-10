@@ -44,4 +44,15 @@
   margin-bottom: 0;
 }
 
+.tag {
+  background-color: #e4382c;
+  border: 3px solid #e4382c;
+  padding: 2px 3px;
+  border-radius: 3px;
+  color: white;
+  font-size: 0.7em;
+  opacity: .8;
+  margin-bottom: 0;
+}
+
 .projects h4 {margin: 0.7em 0.7em}
