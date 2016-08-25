@@ -6,7 +6,7 @@
     <title>Эльмира Мустакимова - Резюме</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<!--Custom fonts. To improve load times, remove this and update the h1 styling in style.css--> 
-	<link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
+	<!--<link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>-->
 
 	<!-- stylesheets -->
 
@@ -17,7 +17,7 @@
 	
 	<!-- just in case viewer is using Internet Explorer -->
 	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
+    <!--<link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>-->
     <link rel="stylesheet" href="styles.css" type="text/css" />
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link rel="stylesheet" href="style2.css" type="text/css" />
@@ -165,9 +165,9 @@
 </div><div class="grid-4">
 			<div class="sectionContent">
 				<article>
-					<h2 class="sectionContent">Учебный ассистент</h2>
+					<h2 class="sectionContent">Учебный ассистент по курсу программирования на Python</h2>
                     <p class="subDetails">Школа лингвистики, Национальный Исследовательский Университет “Высшая Школа Экономики”</p>
-					<p class="subDetails">Ноябрь 2013 - декабрь 2015</p>
+					<p class="subDetails">Сентябрь 2013 - декабрь 2015</p>
 					<p>Курсы: Программирование для лингвистов в 2013, Программирование (Python) с 2014 по настоящее время <br> Обязанности: <br>&#9745; Проверка и оценивание домашних заданий и контрольных работ по программированию  <br>&#9745; Проведение консультаций для небольших групп студентов <br>&#9745; Регулярные отчеты преподавателю об успехах и основных ошибках студентов</p>
 				</article>
                 <article>
@@ -272,15 +272,30 @@
             <section class="projects">
 			<div class="row">
                 <h1>Проекты</h1>
-<div class="grid-1"><h4>2014 – настоящее время</h4></div><div class="grid-5"><h4> «Корпус русских студенческих текстов» и «Русский учебный корпус» <span data-target="corpora" class="label">Подробнее</span></h4></div>
+				<div class="grid-1"><h4>2016</h4></div><div class="grid-5"><h4> Тест по подсчету рук в риичи (японском) маджонге <span data-target="riichi" class="label">Подробнее</span></h4></div>
+                <div class="grid-6"><p id="riichi" style="display: none">
+                    <span class="tag">python</span> <span class="tag">flask</span><br>
+Для игры в японский маджонг необходимо уметь подсчитывать стоимости собираемых рук, причем как в ханах и минипоинтах, так и в очках выплат. Для тренировки подсчета я написала небольшое приложение на python и flask, которое генерирует выигрышную руку, определяет ее стоимость и проверяет ответ пользователя. Поиграть в такую "считалку" можно <a href="http://web-corpora.net/riichicount">здесь</a>.</div>
+
+				<div class="grid-1"><h4>2016</h4></div><div class="grid-5"><h4> Морфологический анализатор для русского языка <span data-target="morpho" class="label">Подробнее</span></h4></div>
+                <div class="grid-6"><p id="morpho" style="display: none">
+                    <span class="tag">python</span> <span class="tag">sklearn</span> <span class="tag">numpy</span><br>
+Проект был задан в рамках курса программирования, и идея состояла в том, чтобы повторить результаты полученные в опубликованных статьях Ассоциации компьютерной лингвистики. Цель этого проекта - сделать быстрый анализатор частей речи методом машинного обучения по статье <a href="http://www.aclweb.org/anthology/C14-1110">Moore (2014)</a>. Проект выполнен в команде с использованием Git, частеречный парсер обучен с помощью модуля scikit-learn на Python. Подробное описание и результаты можно найти <a href="https://github.com/Sereni/Moore-tagger/wiki">в репозитории проекта</a>.</div>
+
+				<div class="grid-1"><h4>2015 - 2016</h4></div><div class="grid-5"><h4> Распознавание русского рукописного текста <span data-target="handwriting" class="label">Подробнее</span></h4></div>
+                <div class="grid-6"><p id="handwriting" style="display: none">
+                    <span class="tag">python</span> <span class="tag">sklearn</span> <span class="tag">skimage</span> <span class="tag">машинное обучение</span> <br>
+В этом проекте основной целью было приступить к разработке открытой систеы OCR (Optical Character Recognition) для распознавания русского курсивного письма. В рамках этой работы я создала базу данных с рукописными символами и целыми предложениями на русском языке. Эта база данных позволит сравнивать между собой результаты разных систем распознавания русского рукописного текста. Затем я приступила к опытам с машинным обучением: я классифицировала изображения отдельных символов с помощью нейронных сетей и метода опорных векторов. Более подробное описание выложено <a href="http://elmiram.github.io/ruhwr/">на странице проекта</a>.</div>
+
+<div class="grid-1"><h4>2014 – 2016</h4></div><div class="grid-5"><h4> «Корпус русских студенческих текстов» и «Русский учебный корпус» <span data-target="corpora" class="label">Подробнее</span></h4></div>
                 <div class="grid-6"><p id="corpora" style="display: none">
-                    <span class="tag">корпус</span> <span class="tag">python</span> <span class="tag">django</span> <span class="tag">mysql</span> <span class="tag">аннотация</span><br>
+                    <span class="tag">корпус</span> <span class="tag">python</span> <span class="tag">django</span> <span class="tag">mysql</span> <span class="tag">аннотирование</span><br>
 Корпус русских студенческих текстов (<a href="https://www.web-corpora.net/learner_corpus">www.web-corpora.net/learner_corpus</a>) содержит тексты, написанные студентами, носителями русского языка, в академической среде.  Русский учебный корпус (<a href="https://www.web-corpora.net/heritage_corpus">www.web-corpora.net/heritage_corpus</a>) содержит тексты, написанные изучающими русский язык студентами с разными родными языками (эритажные носители и носители других языков). Я разрабатываю онлайн платформу для этих двух корпусов. Моя цель – создать сложную систему с возможностью добавления новых текстов, аннотаций, создания подкорпусов и поиска по ним. Инструменты, которые я использую: <i>Python</i>, <i>Django</i>, <i>MySQL</i>.</p></div>
 
-<div class="grid-1"><h4>2014 – настоящее время</h4></div><div class="grid-5"><h4> «Исследования в лексической типологии» <span data-target="lextyp" class="label">Подробнее</span></h4></div>
+<div class="grid-1"><h4>2014 – 2015</h4></div><div class="grid-5"><h4> «Исследования в лексической типологии» <span data-target="lextyp" class="label">Подробнее</span></h4></div>
 <div class="grid-6">
 <p id="lextyp" style="display: none">
-    <span class="tag">лексическая типология</span> <span class="tag">глаголы</span> <span class="tag">идиш</span> <span class="tag">индонезийский</span> <span class="tag">татарский</span> <span class="tag">японский</span> <span class="tag">python</span> <span class="tag">d3.js</span> <span class="tag">sqlite</span> <br>
+    <span class="tag">лексическая типология</span> <span class="tag">глаголы</span> <span class="tag">идиш</span> <span class="tag">индонезийский</span> <span class="tag">татарский</span> <span class="tag">японский</span> <span class="tag">python</span> <span class="tag">d3.js</span> <span class="tag">sqlite</span> <span class="tag">flask</span> <br>
    Исследование глаголов падения в языках мира. В этом проекте я занимаюсь сбором и анализом данных 4 языков (индонезийский, идиш, татарский, японский). Кроме этого, я разрабатываю веб-интерфейс для визуализации базы данных, который будет доступен по ссылке <a href="https://www.web-corpora.net/falling">www.web-corpora.net/falling</a>. Инструменты: <i>Python</i>, <i>SQLite</i>, <i>D3.js</i>.</p>
 </div>
 
@@ -307,7 +322,7 @@
     <div class="grid-1"><h4>2013 – 2014</h4></div><div class="grid-5"><h4> «База данных как инструмент для лексико-типологического исследования: гаголы звуков животных и модели их семантической деривации» <span data-target="animalsounds1" class="label">Подробнее</span></h4></div>
 <div class="grid-6">
 
-<p id="animalsounds1" style="display: none"><span class="tag">лексическая типология</span> <span class="tag">глаголы</span> <span class="tag">метафоры</span> <span class="tag">индонезийский</span> <span class="tag">татарский</span> <span class="tag">python</span> <span class="tag">d3.js</span> <span class="tag">sqlite</span> <br>Цель проекта заключалась в создании базы данных глаголов звуков животных и их метафор. В этом проекте я занималась сбором данных для двух языков, а также разработкой веб-интерфейса для визуализации базы данных (<a href="https://www.web-corpora.net/zvukimu">www.web-corpora.net/zvukimu</a>). <br>
+<p id="animalsounds1" style="display: none"><span class="tag">лексическая типология</span> <span class="tag">глаголы</span> <span class="tag">метафоры</span> <span class="tag">индонезийский</span> <span class="tag">татарский</span> <span class="tag">python</span> <span class="tag">d3.js</span> <span class="tag">sqlite</span> <span class="tag">flask</span> <br>Цель проекта заключалась в создании базы данных глаголов звуков животных и их метафор. В этом проекте я занималась сбором данных для двух языков, а также разработкой веб-интерфейса для визуализации базы данных (<a href="https://www.web-corpora.net/zvukimu">www.web-corpora.net/zvukimu</a>). <br>
     Инструменты: <i>Python</i>, <i>SQLite</i>, <i>D3.js</i>.</p></div>
 			</div>
 		</section>
