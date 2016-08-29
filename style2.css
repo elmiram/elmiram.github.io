@@ -35,13 +35,14 @@
 
 .label {
   background-color: transparent;
-  border: 3px solid #e4382c;
+  border: 1px solid #e4382c;
   padding: 2px 3px;
-  border-radius: 3px;
+  border-radius: 10px;
   color: #e4382c;
-  font-size: 0.7em;
-  opacity: .8;
+  font-size: 0.8em;
+  opacity: .9;
   margin-bottom: 0;
+    cursor: pointer;
 }
 
 .tag {
@@ -50,7 +51,7 @@
   padding: 2px 3px;
   border-radius: 3px;
   color: white;
-  font-size: 0.7em;
+  font-size: 0.6em;
   opacity: .8;
   margin-bottom: 0;
 }
