@@ -83,10 +83,10 @@
 				<div class="grid-4">
 					<h1>Hi there!</h1>
 			<p>
-				My name is Elmira. I'm into languages, programming and handmade stuff.  Currently, I'm a senior student at a BA program in linguistics in Moscow, Russia.
+				My name is Elmira. I'm into languages, programming and handmade stuff. I am a BA in Fundamental and Computational Linguistics. Currently, I continue my education in computational linguistics as a masters student at NRU HSE in Moscow, Russia.
 				Check out <a href="#skills">what I can do</a> and <a href="#hobbies">how I spend my free time</a>. Also have a look at my <a href="#publications">publications</a> and <a href="#conferences">conference list</a> or  read about <a href="#projects">my projects</a>. Please, do not hesitate to <a href="#contacts">contact</a> me!
 			</p>
-					<a href="https://github.com/elmiram/elmiram.github.io/raw/master/ElmiraMustakimovaCV.pdf" class="button">Download CV (PDF)</a>
+					<!--<a href="https://github.com/elmiram/elmiram.github.io/raw/master/ElmiraMustakimovaCV.pdf" class="button">Download CV (PDF)</a>-->
 				</div>
                 <div class="grid-2">
 					<img src="img/me.png" style="margin-top: 10px">
@@ -104,7 +104,7 @@
         </section>
                 <section>
             <div class="row">
-            <p style="text-align: center">I am currently a senior student in the program. Here are the main modules that I've studied:</p>
+            <p style="text-align: center">Graduated cum laude. Here are the main modules that I've studied:</p>
                 <div class="grid-3">
                     <ul style="alignment: left; margin-left: 3em">
 						<li>Theory of Language (Phonetics, Morphology, Syntax, Semantics, Discourse)</li>
@@ -278,56 +278,75 @@
 <section class="spotlight" style="background-color: whitesmoke" id="projects">
     <div class="container">
         <div class="row">
-            <section class="projects">
+
+			<section class="projects">
 			<div class="row">
-                <h1>Projects</h1>
-<div class="grid-1"><h4>2014 – present</h4></div><div class="grid-5"><h4> «Corpus of Russian Student Texts» and «Russian Learner Corpus» <span data-target="corpora" class="label">More</span></h4></div>
+                <h1>Проекты</h1>
+
+				<div class="grid-1"><h4>2016</h4></div><div class="grid-5"><h4> Telegram-bot for sending video from Ted.com <span class="tag">python</span> <span class="tag">bot</span> <span class="tag">pytelegrambotapi</span> <span data-target="tedbot" class="label">More</span></h4></div>
+                <div class="grid-6"><p id="tedbot" style="display: none">
+This is a telegram-bot - <a href="www.telegram.me/tedcombot">Tedcombot</a>, which sends a link to an educational video from Ted.com. Tedcombot understands natural English texts, so one can simply describe what type of videos are welcome. The bot extracts key words from the text using the API of Microsoft Text Analysis Tool.</div>
+
+				<div class="grid-1"><h4>2016</h4></div><div class="grid-5"><h4> Riichi (japanese) mahjong: hand calculation test <span class="tag">python</span> <span class="tag">flask</span> <span data-target="riichi" class="label">More</span></h4></div>
+                <div class="grid-6"><p id="riichi" style="display: none">
+To play japanese mahjong one must learn how to calculate the hand's cost in "fans", "minipoints" and simple points. To train this calculation skill, I wrote a small Flask application which generates a winning hand, calculates its cost and checks the user's answer.  You can play with this app <a href="http://web-corpora.net/riichicount">here</a>.</div>
+
+				<div class="grid-1"><h4>2016</h4></div><div class="grid-5"><h4> Morphological analyzer for Russian <span class="tag">python</span> <span class="tag">sklearn</span> <span class="tag">numpy</span> <span class="tag">machine learning</span> <span data-target="morpho" class="label">More</span></h4></div>
+                <div class="grid-6"><p id="morpho" style="display: none">
+The project was a part of programming course assignment. The idea was to replicate the results described in one of the articles from the Association of Computational Linguistics conferences. The goal of this project was to create a fast Part-of-Speech analyzer for Russian by using machine learning techniques as described in <a href="http://www.aclweb.org/anthology/C14-1110">Moore (2014)</a>. The analyzed was developed by a team of 3 students (including me), we used Git, Python. The Part-of-Speech tagger was learnt with scikit-learn. More information and description can be found <a href="https://github.com/Sereni/Moore-tagger/wiki">in the project wiki</a>.</div>
+
+				<div class="grid-1"><h4>2015 - 2016</h4></div><div class="grid-5"><h4> Recognition of Russian handwritten text <span class="tag">python</span> <span class="tag">sklearn</span> <span class="tag">skimage</span> <span class="tag">machine learning</span> <span data-target="handwriting" class="label">More</span></h4></div>
+                <div class="grid-6"><p id="handwriting" style="display: none">
+Modern research in Russian OCR is focused on recognition of machine-printed or hand-printed text. Quite a few OCR systems can correctly recognize Russian cursive handwriting, however all such systems are commercial and closed for scientific community. This project aims at developing an open OCR system for Russian cursive script recognition. In the project I collected a dataset with alphabet characters and whole sentences for the task of Russian handwriting recognition. Such dataset would exterminate the necessity to collect training data for other Russian handwriting recognition systems and also would allow to compare their results. I also used this dataset in machine learning experiments on Russian cursive letter recognition.
+More information is available at <a href="http://elmiram.github.io/ruhwr/">the project page</a>.</div>
+
+<div class="grid-1"><h4>2014 – 2016</h4></div><div class="grid-5"><h4> Corpus of Russian Student Texts» and «Russian Learner Corpus»  <span class="tag">corpus</span> <span class="tag">python</span> <span class="tag">django</span> <span class="tag">mysql</span>  <span data-target="corpora" class="label">More</span></h4></div>
                 <div class="grid-6"><p id="corpora" style="display: none">
-                    <span class="tag">corpus</span> <span class="tag">python</span> <span class="tag">django</span> <span class="tag">mysql</span> <span class="tag">annotation</span><br>
 The Corpus of Russian Student Texts (<a href="https://www.web-corpora.net/learner_corpus">www.web-corpora.net/learner_corpus</a>) contains texts written by students, native speakers of Russian, in academic environment (usually project writing samples from various courses). The Russian Learner Corpus (<a href="https://www.web-corpora.net/heritage_corpus">www.web-corpora.net/heritage_corpus</a>) contains texts written by learners of Russian with various backgrounds (different native languages, heritage speakers or L2 learners). I develop the online platform for these two corpora. My goal is to create a complex system that would enable users to add and annotate texts, create subcorpora and to perform exact and lexico-grammatical search. The tools I use: <i>Python</i>, <i>Django</i>, <i>MySQL</i>.</p></div>
 
-<div class="grid-1"><h4>2014 – present</h4></div><div class="grid-5"><h4> «Research in Lexical Typology» <span data-target="lextyp" class="label">More</span></h4></div>
+<div class="grid-1"><h4>2014 – 2015</h4></div><div class="grid-5"><h4>  «Research in Lexical Typology»  <span class="tag">lexical typology</span> <span class="tag">python</span> <span class="tag">d3.js</span> <span class="tag">sqlite</span> <span class="tag">flask</span> <span data-target="lextyp" class="label">More</span></h4></div>
 <div class="grid-6">
 <p id="lextyp" style="display: none">
-    <span class="tag">lexical typology</span> <span class="tag">verbs</span> <span class="tag">yiddish</span> <span class="tag">indonesian</span> <span class="tag">tatar</span> <span class="tag">japanese</span> <span class="tag">python</span> <span class="tag">d3.js</span> <span class="tag">sqlite</span> <br>
-    A team of lexical typologists studies the verbs denoting ‘falling’ in the world's languages. In this project I collect and analyze data of 4 languages (Indonesian, Yiddish, Tatar and Japanese) and develop a web-interface for the database. The interface will be accessible by link <a href="https://www.web-corpora.net/falling">www.web-corpora.net/falling</a>, the work is now in progress. Tools: <i>Python</i>, <i>SQLite</i>, <i>D3.js</i>.</p>
+  A team of lexical typologists studies the verbs denoting ‘falling’ in the world's languages. In this project I collect and analyze data of 4 languages (Indonesian, Yiddish, Tatar and Japanese) and develop a web-interface for the database. The interface will be accessible by link <a href="https://www.web-corpora.net/falling">www.web-corpora.net/falling</a>, the work is now in progress. Tools: <i>Python</i>, <i>SQLite</i>, <i>D3.js</i>.</p>
 </div>
 
-<div class="grid-1"><h4>2014 – 2015</h4></div><div class="grid-5"><h4> Student Seminar on Linguistics and Related Fields <span data-target="studsem" class="label">More</span></h4></div>
+<div class="grid-1"><h4>2014 – 2015</h4></div><div class="grid-5"><h4> Student Seminar on Linguistics and Related Fields <span class="tag">students</span> <span class="tag">leadership</span> <span data-target="studsem" class="label">More</span></h4></div>
  <div class="grid-6">
 
-<p id="studsem" style="display: none"><span class="tag">students</span><br>At some point, I realized that I am not aware of the research that some of my classmates or other students in our department are doing.
+<p id="studsem" style="display: none">At some point, I realized that I am not aware of the research that some of my classmates or other students in our department are doing.
     Therefore, I suggested a monthly student seminar, where everyone can share his/her research and receive comments from each other. Quite many students supported the idea, and eventually I began chairing our monthly sessions.</p></div>
 
-                <div class="grid-1"><h4>2014</h4></div><div class="grid-5"><h4> «Automatic Identification of Semantic Aureole of Meter» <span data-target="meter" class="label">More</span></h4></div>
+                <div class="grid-1"><h4>2014</h4></div><div class="grid-5"><h4> «Automatic Identification of Semantic Aureole of Meter» <span class="tag">machine learning</span> <span class="tag">russian poetry</span> <span class="tag">R</span> <span data-target="meter" class="label">More</span></h4></div>
 <div class="grid-6">
 
-<p id="meter" style="display: none"><span class="tag">machine learning</span> <span class="tag">metrics</span> <span class="tag">russian poetry</span> <span class="tag">R</span> <span class="tag">topic clustering</span><br>“Automatic identification of semantic aureole of meter” is a final project at a course “Meter in Russian Poetry”.
+<p id="meter" style="display: none">“Automatic identification of semantic aureole of meter” is a final project at a course “Meter in Russian Poetry”.
     The work is inspired by the idea that a particular poetry meter in the poet’s mind is subconsciously connected to a particular set of topics. This idea was quite popular among some Russian researchers in the XXth century. I tried to use various machine learning techniques to cluster Russian poems by topics and see whether the clusters correspond to meter clusters. Though the answer was negative, the work drew interest of philologists and I gave a talk about the project at an International Conference of Young Philologists in Tartu.</p></div>
 
-    <div class="grid-1"><h4>2014</h4></div><div class="grid-5"><h4> «Automatic Identification of Paradigm Gaps in Corpora» <span data-target="gaps" class="label">More</span></h4></div>
+    <div class="grid-1"><h4>2014</h4></div><div class="grid-5"><h4> «Automatic Identification of Paradigm Gaps in Corpora»  <span class="tag">natural language processing</span> <span class="tag">machine learning</span>  <span class="tag">R</span> <span class="tag">python</span> <span data-target="gaps" class="label">More</span></h4></div>
 <div class="grid-6">
 
-<p id="gaps" style="display: none"><span class="tag">paradigm gaps</span> <span class="tag">machine learning</span> <span class="tag">classification</span> <span class="tag">python</span> <span class="tag">R</span> <span class="tag">corpus</span><br>“Automatic identification of paradigm gaps in corpora” is the topic of my third year final paper.
-    At that time, articles of Adam Albright on paradigmatic gaps fascinated me; I also became interested in the potential of machine learning for linguistic research. These two interests resulted in a project where I used decision trees, KNN classifier and a Naïve Bayes classifier to automatically decide on the basis of accessible Russian corpus data whether a particular word has a defective paradigm or not. In this project I used Python, R and the data of Russian National Corpus.</p></div>
+<p id="gaps" style="display: none"> “Automatic identification of paradigm gaps in corpora” is the topic of my third year final paper.
+    At that time, articles of Adam Albright on paradigmatic gaps fascinated me; I also became interested in the potential of machine learning for linguistic research. These two interests resulted in a project where I used decision trees, KNN classifier and a Naïve Bayes classifier to automatically decide on the basis of accessible Russian corpus data whether a particular word has a defective paradigm or not. In this project I used Python, R and the data of Russian National Corpus. </p></div>
 
-    <div class="grid-1"><h4>2013 – 2014</h4></div><div class="grid-5"><h4> «Creation of Corpus Instruments for Yiddish» <span data-target="yiddish" class="label">More</span></h4></div>
+    <div class="grid-1"><h4>2013 – 2014</h4></div><div class="grid-5"><h4> «Creation of Corpus Instruments for Yiddish» <span class="tag">corpus</span> <span class="tag">python</span> <span class="tag">natural language processing</span> <span data-target="yiddish" class="label">More</span></h4></div>
 <div class="grid-6">
 
-<p id="yiddish" style="display: none"><span class="tag">corpus</span> <span class="tag">yiddish</span> <span class="tag">python</span> <span class="tag">morphological disambiguation</span><br><strong>Aim</strong>: create instruments for the Yiddish language, such as a transliterator, automatic alignment of Yiddish texts with corresponding audio files, comprising a corpus out of a mere collection of texts. <br>
+<p id="yiddish" style="display: none"><strong>Aim</strong>: create instruments for the Yiddish language, such as a transliterator, automatic alignment of Yiddish texts with corresponding audio files, comprising a corpus out of a mere collection of texts. <br>
     <strong>Who</strong>: a team of students and professors. <br>
     <strong>My part</strong>: automatic disambiguation of Yiddish. No disambiguation programs for the Yiddish language existed before this work.<br>
     <strong>Tools that I used</strong>: We already obtained a morphological parser for Yiddish, but its output left much to be desired, so I took disambiguation upon myself. I used several disambiguation strategies (rule-based, data-driven Brill algorithm, HMM and Viterbi decoding, simple bigram model). The disambiguator is implemented in <i>Python</i>. Later, this work became my second year final paper. </p></div>
 
-    <div class="grid-1"><h4>2013 – 2014</h4></div><div class="grid-5"><h4> «Database as an Instrument for Lexico-Typological Research: Verbs of Sounds ad the Models of their Semantic Derivation» <span data-target="animalsounds1" class="label">More</span></h4></div>
+    <div class="grid-1"><h4>2013 – 2014</h4></div><div class="grid-5"><h4> «Database as an Instrument for Lexico-Typological Research: Verbs of Sounds ad the Models of their Semantic Derivation» <span class="tag">lexical typology</span> <span class="tag">python</span> <span class="tag">d3.js</span> <span class="tag">sqlite</span> <span class="tag">flask</span> <span data-target="animalsounds1" class="label">More</span></h4></div>
 <div class="grid-6">
 
-<p id="animalsounds1" style="display: none"><span class="tag">lexical typology</span> <span class="tag">verbs</span> <span class="tag">metaphors</span> <span class="tag">indonesian</span> <span class="tag">tatar</span> <span class="tag">python</span> <span class="tag">d3.js</span> <span class="tag">sqlite</span> <br><strong>Aim</strong>: collect a database of verbs of animal sounds; analyze the linguistic categorization of animals and the metaphorical uses of their sound verbs. <br>
+<p id="animalsounds1" style="display: none"><strong>Aim</strong>: collect a database of verbs of animal sounds; analyze the linguistic categorization of animals and the metaphorical uses of their sound verbs. <br>
     <strong>Who</strong>: research group consisting of students and professors of School of Linguistics NRU HSE. <br>
     <strong>My part</strong>: collecting and analyzing the linguistic data in Tatar and Indonesian languages; developing a visualizing interface for the collected database (<a href="https://www.web-corpora.net/zvukimu">www.web-corpora.net/zvukimu</a>). <br>
-    <strong>Tools that I used</strong>: <i>Python</i>, <i>SQLite</i>, <i>D3.js</i>.</p></div>
+    <strong>Tools that I used</strong>: <i>Python</i>, <i>SQLite</i>, <i>D3.js</i>.</div>
 			</div>
 		</section>
+
+
         </div>
     </div>
 </section>
